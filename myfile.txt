@@ -1,0 +1,3 @@
+Hello, My name is Sudhanshu Sinha
+This file is to test python file IO functions
+This is a simple text file
