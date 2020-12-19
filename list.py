@@ -24,5 +24,12 @@ c.sort(key=lambda x: x[1])
 print(c)
 print(type(c[0]))
 
-info=help(c)
-print(info)
+#Pop item from end of list and remove it from list
+d=c.pop()
+print(d)
+print(c)
+
+#Pop first element from list
+d=c.pop(0)
+print(d)
+print(c)

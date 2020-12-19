@@ -17,6 +17,10 @@ print(name.split('h'))
 
 #String Formatting
 print("My name is {}".format(name))
+print(f"My name is {name}")
 
 result=1222.1023054
 print("The result is {r:0.5f}".format(r=result))
+print(f"The result is {result:0.5f}")
+age=37
+print(f"{name} age is {age}")
