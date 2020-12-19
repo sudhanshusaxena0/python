@@ -1,3 +1,2 @@
 Hello, My name is Sudhanshu Sinha
-This file is to test python file IO functions
-This is a simple text file
+This is a test file for file IO operations

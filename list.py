@@ -33,3 +33,6 @@ print(c)
 d=c.pop(0)
 print(d)
 print(c)
+
+list1=[1]*10
+print(list1)
