@@ -120,3 +120,49 @@ print(f"Name entered is {name}")
 age=input("Enter your age: ")
 print(type(age))
 print(type(int(age)))
+
+print("\n\n\n")
+name="sudhanshu"
+l1=[]
+for i in name:
+    l1.append(i)
+print(l1)
+
+print("\n\n\n")
+name="sudhanshu"
+l1=[i for i in name]
+print(l1)
+
+print("\n\n\n")
+l1=[x for x in "hello how are you"]
+print(l1)
+
+print("\n\n\n")
+l1=[x for x in range(0,100)]
+print(l1)
+
+print("\n\n\n")
+l1=[x*2 for x in range(0,10)]
+print(l1)
+
+print("\n\n\n")
+l1=[x for x in range(0,11) if x%2==0]
+print(l1)
+
+print("\n\n\n")
+celcius=[0,10,20,34.5]
+fahrenheit=[((9/5)*temp+32) for temp in celcius]
+print(celcius)
+print(fahrenheit)
+
+print("\n\n\n")
+results=[x if x%2 == 0 else 'ODD' for x in range(0,10)]
+print(results)
+
+print("\n\n\n")
+for x in [1,2,3]:
+    for y in [4,5,6]:
+        print(x*y)
+
+print("\n\n\n")
+print([x*y for x in [1,2,3] for y in [4,5,6]])
