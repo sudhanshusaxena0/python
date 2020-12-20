@@ -127,14 +127,43 @@ def myfunc1(*args,**kwargs):
     print(f"I would like {args[0]} {kwargs['food']}")
 myfunc1(10,20,30,fruit="orange",food="eggs",animal="dog")
 
+#return string with even index character in upper and odd index character in lower
 def upper_lower(string1):
     case_string=""
-    for i in string1:
+    for i in range(len(string1)):
         if i%2 == 0:
+            case_string=case_string+string1[i].upper()
+        else:
+            case_string=case_string+string1[i].lower()
+
+    return case_string
+
+result=upper_lower("sudhanshu")
+print(result)
+
+#return string with even ascii character in upper and odd ascii character in lower
+def upper_lower1(string1):
+    case_string=""
+    for i in string1:
+        if ord(i)%2 == 0:
             case_string=case_string+i.upper()
         else:
             case_string=case_string+i.lower()
 
     return case_string
 
-upper_lower("sudhanshu")
+result=upper_lower1("sudhanshu")
+print(result)
+
+def max_min(num1,num2):
+    if num1%2 == 0 and num2%2 == 0:
+        return max(num1,num2)
+    else:
+        return min(num1,num2)
+
+print(max_min(2,4))
+print(max_min(3,5))
+
+#convert a list into string
+list1=["sudhanshu","sinha","age","is","38"]
+print(" ".join(list1))

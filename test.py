@@ -1,7 +1,7 @@
-a='a'
-b='b'
-c=''
-c=c+a.upper()+b.upper()
-print(c)
+str1='a'
+str2='b'
+str3=''
+str3=str3+str1.upper()+str2.upper()
+print(str3)
 
-help(str)
+print(ord('n'))
