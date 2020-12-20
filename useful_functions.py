@@ -40,15 +40,13 @@ names=["ayush","piyush","ram"]
 print(list(map(lambda name:name[0],names)))
 print(list(map(lambda name:name[::-1],names)))
 
-def sequence_check(list1):
-    list2=[0,0,7]
-    index1=0
-    list3=[]
-    for i in list1:
-        if i == list2[index1]:
-            list3[index1]=i
-            index1+=1
-            if list2 == list3:
-                return True
-        else
-            index1=0
+
+def check_palindrome(str1):
+    str1=str1.replace(" ","")
+    if str1 == str1[::-1]:
+        print(f"String {str1} is a palindrome")
+    else:
+        print(f"String {str1} is not a palindrome")
+
+check_palindrome("nurses run")
+check_palindrome("abc xyz")
