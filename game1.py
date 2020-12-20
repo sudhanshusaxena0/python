@@ -18,9 +18,12 @@ print(f"\nPlayer1 is {player1} and Player2 is {player2}")
 
 def print_game1():
     print()
-    print(f" {game1[0]}   {game1[1]}   {game1[2]}\n")
-    print(f" {game1[3]}   {game1[4]}   {game1[5]}\n")
-    print(f" {game1[6]}   {game1[7]}   {game1[8]}\n")
+    print(f" {game1[0]} | {game1[1]} | {game1[2]}")
+    print(" .........")
+    print(f" {game1[3]} | {game1[4]} | {game1[5]}")
+    print(" .........")
+    print(f" {game1[6]} | {game1[7]} | {game1[8]}")
+    print()
 
 
 def check_game1(x_or_o):
