@@ -167,3 +167,52 @@ print(max_min(3,5))
 #convert a list into string
 list1=["sudhanshu","sinha","age","is","38"]
 print(" ".join(list1))
+
+#absolute value
+print(abs(-100))
+
+#for i in range(3):
+#    for j in range(3,0):
+def triangleShape(n):
+    for i in range(n):
+        for j in range(n-i):
+            print(' ', end=' ')
+        for k in range(2*i+1):
+            print('*',end=' ')
+        print()
+
+triangleShape(5)
+
+
+
+def triangle(num):
+    for i in range(num):
+        for j in range(num-i):
+            print("   ",end=" ")
+        for k in range(i*2+1):
+            print(" * ",end=" ")
+        print()
+
+triangle(5)
+
+def tree(num):
+    x=num
+    y=num-1
+    z=0
+    while z < num:
+        print(" "*z,end="")
+        print("*"*(x+y),end="")
+        z+=1
+        x-=1
+        y-=1
+        print()
+    x=num-2
+    y=num-1
+    z=0
+    while z < num-1:
+        print(" "*x,end="")
+        print("*"*y,end="")
+        x-=1
+        y+=2
+        z+=1
+        print()
