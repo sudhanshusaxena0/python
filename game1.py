@@ -1,4 +1,5 @@
 import time
+from os import system
 
 game1=[0,1,2,3,4,5,6,7,8]
 player1=""
@@ -14,7 +15,7 @@ while True:
     else:
         print(f"\nPlayer1 entered incorrect value...\n")
         continue
-print(f"\nPlayer1 is {player1} and Player2 is {player2}")
+    print(f"\nPlayer1 is {player1} and Player2 is {player2}")
 
 def print_game1():
     print()
@@ -24,7 +25,6 @@ def print_game1():
     print(" .........")
     print(f" {game1[6]} | {game1[7]} | {game1[8]}")
     print()
-
 
 def check_game1(x_or_o):
     if set(game1[0:3]) == {x_or_o} or set(game1[3:6]) == {x_or_o} or set(game1[6:9]) == {x_or_o}:
@@ -40,8 +40,8 @@ turn="Player1"
 while True:
     print_game1()
 
-    #print(f"\n{turn} its your turn...\n")
     choice=input(f"{turn} choose the number from the above cells: ")
+    system('cls')
     if choice in ['0','1','2','3','4','5','6','7','8']:
         choice=int(choice)
     else:
@@ -56,7 +56,7 @@ while True:
             game1[choice]=player1
             status=check_game1(player1)
             if status == "WIN":
-                print("\n***** Player1 is the winner *****\n")
+                print("\n***** Player1 is the winner *****")
                 print_game1()
                 time.sleep(10)
                 break
@@ -65,7 +65,7 @@ while True:
             game1[choice]=player2
             status=check_game1(player2)
             if status == "WIN":
-                print("\n***** Player2 is the winner *****\n")
+                print("\n***** Player2 is the winner *****")
                 print_game1()
                 time.sleep(10)
                 break
