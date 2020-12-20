@@ -1,21 +1,21 @@
 import time
 from os import system
 
-game1=[0,1,2,3,4,5,6,7,8]
-player1=""
-player2=""
-while True:
-    player1=input("Player1 please choose X or O: ").upper()
-    if player1 == 'X':
-        player2='O'
-        break
-    elif player1 == 'O':
-        player2='X'
-        break
-    else:
-        print(f"\nPlayer1 entered incorrect value...\n")
-        continue
-    print(f"\nPlayer1 is {player1} and Player2 is {player2}")
+def init_game1():
+    game1=[0,1,2,3,4,5,6,7,8]
+    while True:
+        player1=input("Player1 please choose X or O: ").upper()
+        if player1 == 'X':
+            player2='O'
+            break
+        elif player1 == 'O':
+            player2='X'
+            break
+        else:
+            print(f"\nPlayer1 entered incorrect value...\n")
+            continue
+        print(f"\nPlayer1 is {player1} and Player2 is {player2}")
+    return (game1,player1,player2)
 
 def print_game1():
     print()
@@ -35,6 +35,8 @@ def check_game1(x_or_o):
         return "WIN"
     elif set(game1) == {'O','X'}:
         return "NOWIN"
+
+game1,player1,player2=init_game1()
 
 turn="Player1"
 while True:
