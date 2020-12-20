@@ -29,3 +29,26 @@ print(square1(6))
 a=[1,2,3,4,5,6,7,8,9,10]
 b=list(map(lambda n:n**2,a))
 print(b)
+
+b=list(map(lambda n:n%2 == 0,a))
+print(b)
+
+b=list(filter(lambda n:n%2 == 0,a))
+print(b)
+
+names=["ayush","piyush","ram"]
+print(list(map(lambda name:name[0],names)))
+print(list(map(lambda name:name[::-1],names)))
+
+def sequence_check(list1):
+    list2=[0,0,7]
+    index1=0
+    list3=[]
+    for i in list1:
+        if i == list2[index1]:
+            list3[index1]=i
+            index1+=1
+            if list2 == list3:
+                return True
+        else
+            index1=0
